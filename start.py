@@ -7,10 +7,9 @@ def main():
 
     computer_name = socket.gethostname()
 
-    raw_file_name = "song (Friends - Marshmello Justin Caruso Remix).wav"
+    raw_file_name = "song (Fairytail - Alexander Rybak).wav"
     file_name = raw_file_name.replace(" ", "%20").replace("(", "%28").replace(")", "%29")
     music_url = f"http://{computer_name}/{file_name}"
-    print(music_url)
 
     device.play_uri(music_url)
 
